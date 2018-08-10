@@ -1,2 +1,6 @@
 import htmlTemplate from "../components/htmlTemplate";
-export default () => <div>{htmlTemplate(<h1>ice</h1>)}</div>;
+import reduxComponent from "../redux/reduxComponent";
+
+const Template = <>{htmlTemplate(<h1>ice</h1>)}</>;
+
+export default () => <>{reduxComponent(Template)}</>;
