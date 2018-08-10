@@ -126,7 +126,7 @@ var Container = __WEBPACK_IMPORTED_MODULE_2_styled_components___default.a.div(_t
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__icon__ = __webpack_require__("./components/icon.js");
 var _jsxFileName = "/home/tauhoo/Documents/wachirawit/components/bottomBar.js";
 
-var _templateObject = /*#__PURE__*/ _taggedTemplateLiteral(["\n  top: 100vh;\n  position: relative;\n  transform: translateY(-165%);\n"]);
+var _templateObject = /*#__PURE__*/ _taggedTemplateLiteral(["\n  top: 95vh;\n  left: 45vw;\n  position: absolute;\n  transform: translate(-50%, -100%);\n  width: 600px;\n  @media (max-width: 750px) {\n    width: calc(100vw*4/5);\n  }\n"]);
 
 
 
@@ -139,35 +139,35 @@ var Container = __WEBPACK_IMPORTED_MODULE_1_styled_components___default.a.div(_t
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Container, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 16
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__icon__["a" /* default */], {
     url: "/static/profileLogo.png",
     size: "150px",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 17
     }
   }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__icon__["a" /* default */], {
     url: "/static/skillLogo.png",
     size: "150px",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 18
     }
   }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__icon__["a" /* default */], {
     url: "/static/facebookLogo.png",
     size: "150px",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 19
     }
   }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__icon__["a" /* default */], {
     url: "/static/emailLogo.png",
     size: "150px",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 20
     }
   }));
 });
@@ -219,31 +219,71 @@ var _jsxFileName = "/home/tauhoo/Documents/wachirawit/components/htmlTemplate.js
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_styled_components__ = __webpack_require__("styled-components");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_styled_components___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_styled_components__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _default; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_components__ = __webpack_require__("styled-components");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_components___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_styled_components__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
 var _jsxFileName = "/home/tauhoo/Documents/wachirawit/components/icon.js";
 
-var _templateObject = /*#__PURE__*/ _taggedTemplateLiteral(["\n  height: 150px;\n  width:  150px;\n  @media (max-width: 750px) {\n    height: calc(100vw/5);\n    width:  calc(100vw/5);\n  }\n\n"]);
+var _templateObject = /*#__PURE__*/ _taggedTemplateLiteral(["\n  height: 150px;\n  width: 150px;\n  @media (max-width: 750px) {\n    height: calc(100vw / 5);\n    width: calc(100vw / 5);\n  }\n"]);
 
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 
-var Img = __WEBPACK_IMPORTED_MODULE_1_styled_components___default.a.img(_templateObject);
-/* harmony default export */ __webpack_exports__["a"] = (function (props) {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Img, {
-    src: props.url,
-    height: props.size,
-    width: props.size,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
+
+var Img = __WEBPACK_IMPORTED_MODULE_0_styled_components___default.a.img(_templateObject);
+
+var _default =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(_default, _Component);
+
+  function _default(props) {
+    var _this;
+
+    _classCallCheck(this, _default);
+
+    _this = _possibleConstructorReturn(this, (_default.__proto__ || Object.getPrototypeOf(_default)).call(this, props));
+    _this.state = {
+      isHover: false
+    };
+    return _this;
+  }
+
+  _createClass(_default, [{
+    key: "render",
+    value: function render() {
+      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(Img, {
+        src: this.state ? this.props.url : this.props.url,
+        height: this.props.size,
+        width: this.props.size,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        }
+      });
     }
-  });
-});
+  }]);
+
+  return _default;
+}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
+
+
 
 /***/ }),
 
@@ -257,7 +297,7 @@ var Img = __WEBPACK_IMPORTED_MODULE_1_styled_components___default.a.img(_templat
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_styled_components___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_styled_components__);
 var _jsxFileName = "/home/tauhoo/Documents/wachirawit/components/topBar.js";
 
-var _templateObject = /*#__PURE__*/ _taggedTemplateLiteral(["\n  overflow: hidden;\n  padding: 15px;\n  width: calc(100vw-30px);\n"]);
+var _templateObject = /*#__PURE__*/ _taggedTemplateLiteral(["\n  position:absolute;\n  overflow: hidden;\n  padding: 15px;\n  width: 100vw;\n  box-sizing: border-box;\n"]);
 
 
 
@@ -269,7 +309,7 @@ var Container = __WEBPACK_IMPORTED_MODULE_1_styled_components___default.a.div(_t
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Container, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 12
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
     src: "/static/logo.png",
@@ -277,7 +317,7 @@ var Container = __WEBPACK_IMPORTED_MODULE_1_styled_components___default.a.div(_t
     width: "60px",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 13
     }
   }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
     src: "/static/topic.png",
@@ -288,7 +328,7 @@ var Container = __WEBPACK_IMPORTED_MODULE_1_styled_components___default.a.div(_t
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 14
     }
   }));
 });

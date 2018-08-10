@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 const Container = styled.div`
+  position:absolute;
   overflow: hidden;
   padding: 15px;
-  width: calc(100vw-30px);
+  width: 100vw;
+  box-sizing: border-box;
 `;
 
 export default () => (

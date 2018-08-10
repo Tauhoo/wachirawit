@@ -2,9 +2,14 @@ import styled from "styled-components";
 import Icon from "./icon";
 
 const Container = styled.div`
-  top: 100vh;
-  position: relative;
-  transform: translateY(-165%);
+  top: 95vh;
+  left: 45vw;
+  position: absolute;
+  transform: translate(-50%, -100%);
+  width: 600px;
+  @media (max-width: 750px) {
+    width: calc(100vw*4/5);
+  }
 `;
 
 export default () => (
