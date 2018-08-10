@@ -72,6 +72,27 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./components/body.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__topBar__ = __webpack_require__("./components/topBar.js");
+var _jsxFileName = "/home/tauhoo/Documents/wachirawit/components/body.js";
+
+
+/* harmony default export */ __webpack_exports__["a"] = (function () {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Fragment, null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__topBar__["a" /* default */], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    }
+  }));
+});
+
+/***/ }),
+
 /***/ "./components/htmlTemplate.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -113,6 +134,54 @@ var _jsxFileName = "/home/tauhoo/Documents/wachirawit/components/htmlTemplate.js
 
 /***/ }),
 
+/***/ "./components/topBar.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_styled_components__ = __webpack_require__("styled-components");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_styled_components___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_styled_components__);
+var _jsxFileName = "/home/tauhoo/Documents/wachirawit/components/topBar.js";
+
+var _templateObject = /*#__PURE__*/ _taggedTemplateLiteral(["\n  overflow: hidden;\n  padding: 15px;\n  width: calc(100vw-30px);\n"]);
+
+
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+var Container = __WEBPACK_IMPORTED_MODULE_1_styled_components___default.a.div(_templateObject);
+/* harmony default export */ __webpack_exports__["a"] = (function () {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Container, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+    src: "/static/logo.png",
+    height: "60px",
+    width: "60px",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    }
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+    src: "/static/topic.png",
+    height: "30px",
+    style: {
+      float: "right",
+      margin: '15px 0px 0px 0px'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    }
+  }));
+});
+
+/***/ }),
+
 /***/ "./pages/index.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -122,27 +191,29 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_htmlTemplate__ = __webpack_require__("./components/htmlTemplate.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__redux_reduxComponent__ = __webpack_require__("./redux/reduxComponent.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_body__ = __webpack_require__("./components/body.js");
 var _jsxFileName = "/home/tauhoo/Documents/wachirawit/pages/index.js";
 
 
 
-var Template = Object(__WEBPACK_IMPORTED_MODULE_1__components_htmlTemplate__["a" /* default */])(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 4
-  }
-}, "ice"));
-var ReduxComponent = Object(__WEBPACK_IMPORTED_MODULE_2__redux_reduxComponent__["a" /* default */])(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Template, {
+
+var Template = Object(__WEBPACK_IMPORTED_MODULE_1__components_htmlTemplate__["a" /* default */])(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_body__["a" /* default */], {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 5
+  }
+}));
+var ReduxComponent = Object(__WEBPACK_IMPORTED_MODULE_2__redux_reduxComponent__["a" /* default */])(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Template, {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 6
   }
 }));
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(ReduxComponent, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 8
     }
   });
 });
@@ -239,6 +310,13 @@ module.exports = require("react-redux");
 /***/ (function(module, exports) {
 
 module.exports = require("redux");
+
+/***/ }),
+
+/***/ "styled-components":
+/***/ (function(module, exports) {
+
+module.exports = require("styled-components");
 
 /***/ })
 
