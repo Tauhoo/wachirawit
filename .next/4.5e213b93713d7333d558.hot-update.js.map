@@ -1,0 +1,1 @@
+{"version":3,"file":"4.5e213b93713d7333d558.hot-update.js","sources":["webpack:///pages/index.js"],"sourcesContent":["import htmlTemplate from \"../components/htmlTemplate\";\nexport default () => {htmlTemplate()};\n\n\n\n// WEBPACK FOOTER //\n// pages/index.js"],"mappings":";;;;;;AAAA;AAAA;AAAA;AACA;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;A","sourceRoot":""}
