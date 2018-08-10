@@ -10,6 +10,7 @@ export default Element => props => (
       body, html {
         margin: 0px;
         padding: 0px;
+        background-color: #9b59b6;
       }
     `}
     </style>

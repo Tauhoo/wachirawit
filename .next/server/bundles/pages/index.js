@@ -79,14 +79,95 @@ module.exports =
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__topBar__ = __webpack_require__("./components/topBar.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_styled_components__ = __webpack_require__("styled-components");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_styled_components___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_styled_components__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__bottomBar__ = __webpack_require__("./components/bottomBar.js");
 var _jsxFileName = "/home/tauhoo/Documents/wachirawit/components/body.js";
 
+var _templateObject = /*#__PURE__*/ _taggedTemplateLiteral(["\n  position: absolute;\n  height: 100vh;\n  width: 100vw;\n  top: 0px;\n  left: 0px;\n"]);
 
+
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+var Container = __WEBPACK_IMPORTED_MODULE_2_styled_components___default.a.div(_templateObject);
 /* harmony default export */ __webpack_exports__["a"] = (function () {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Fragment, null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__topBar__["a" /* default */], {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Container, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
+      lineNumber: 14
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__topBar__["a" /* default */], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    }
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__bottomBar__["a" /* default */], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    }
+  }));
+});
+
+/***/ }),
+
+/***/ "./components/bottomBar.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_styled_components__ = __webpack_require__("styled-components");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_styled_components___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_styled_components__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__icon__ = __webpack_require__("./components/icon.js");
+var _jsxFileName = "/home/tauhoo/Documents/wachirawit/components/bottomBar.js";
+
+var _templateObject = /*#__PURE__*/ _taggedTemplateLiteral(["\n  top: 100vh;\n  position: relative;\n  transform: translateY(-165%);\n"]);
+
+
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+var Container = __WEBPACK_IMPORTED_MODULE_1_styled_components___default.a.div(_templateObject);
+/* harmony default export */ __webpack_exports__["a"] = (function () {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Container, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__icon__["a" /* default */], {
+    url: "/static/profileLogo.png",
+    size: "150px",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    }
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__icon__["a" /* default */], {
+    url: "/static/skillLogo.png",
+    size: "150px",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    }
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__icon__["a" /* default */], {
+    url: "/static/facebookLogo.png",
+    size: "150px",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    }
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__icon__["a" /* default */], {
+    url: "/static/emailLogo.png",
+    size: "150px",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
     }
   }));
 });
@@ -128,8 +209,40 @@ var _jsxFileName = "/home/tauhoo/Documents/wachirawit/components/htmlTemplate.js
         fileName: _jsxFileName,
         lineNumber: 8
       }
-    }, "\n      body, html {\n        margin: 0px;\n        padding: 0px;\n      }\n    "), Element);
+    }, "\n      body, html {\n        margin: 0px;\n        padding: 0px;\n        background-color: #9b59b6;\n      }\n    "), Element);
   };
+});
+
+/***/ }),
+
+/***/ "./components/icon.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_styled_components__ = __webpack_require__("styled-components");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_styled_components___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_styled_components__);
+var _jsxFileName = "/home/tauhoo/Documents/wachirawit/components/icon.js";
+
+var _templateObject = /*#__PURE__*/ _taggedTemplateLiteral(["\n  height: 150px;\n  width:  150px;\n  @media (max-width: 750px) {\n    height: calc(100vw/5);\n    width:  calc(100vw/5);\n  }\n\n"]);
+
+
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+var Img = __WEBPACK_IMPORTED_MODULE_1_styled_components___default.a.img(_templateObject);
+/* harmony default export */ __webpack_exports__["a"] = (function (props) {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Img, {
+    src: props.url,
+    height: props.size,
+    width: props.size,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    }
+  });
 });
 
 /***/ }),
