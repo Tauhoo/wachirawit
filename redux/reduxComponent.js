@@ -4,4 +4,4 @@ import reducer from "./reducer";
 
 const store = createStore(reducer);
 
-export default Page => <Provider store={store}>{Page}</Provider>;
+export default Page => () => <Provider store={store}>{Page}</Provider>;

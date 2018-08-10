@@ -84,34 +84,31 @@ var _jsxFileName = "/home/tauhoo/Documents/wachirawit/components/htmlTemplate.js
 
 
 /* harmony default export */ __webpack_exports__["a"] = (function (Element) {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 3
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_head___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("title", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    }
-  }, "Wachirawit"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("meta", {
-    name: "viewport",
-    content: "initial-scale=1.0, width=device-width",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    }
-  })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("style", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    }
-  }, "\n      body, html {\n        margin: 0px;\n        padding: 0px;\n      }\n    "), Element);
+  return function (props) {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Fragment, null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_head___default.a, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 4
+      }
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("title", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 5
+      }
+    }, "Wachirawit"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("meta", {
+      name: "viewport",
+      content: "initial-scale=1.0, width=device-width",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 6
+      }
+    })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("style", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 8
+      }
+    }, "\n      body, html {\n        margin: 0px;\n        padding: 0px;\n      }\n    "), Element);
+  };
 });
 
 /***/ }),
@@ -129,14 +126,25 @@ var _jsxFileName = "/home/tauhoo/Documents/wachirawit/pages/index.js";
 
 
 
-var Template = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Fragment, null, Object(__WEBPACK_IMPORTED_MODULE_1__components_htmlTemplate__["a" /* default */])(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", {
+var Template = Object(__WEBPACK_IMPORTED_MODULE_1__components_htmlTemplate__["a" /* default */])(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 4
   }
-}, "ice")));
+}, "ice"));
+var ReduxComponent = Object(__WEBPACK_IMPORTED_MODULE_2__redux_reduxComponent__["a" /* default */])(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Template, {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 5
+  }
+}));
 /* harmony default export */ __webpack_exports__["default"] = (function () {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Fragment, null, Object(__WEBPACK_IMPORTED_MODULE_2__redux_reduxComponent__["a" /* default */])(Template));
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(ReduxComponent, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    }
+  });
 });
 
 /***/ }),
@@ -185,13 +193,15 @@ var _jsxFileName = "/home/tauhoo/Documents/wachirawit/redux/reduxComponent.js";
 
 var store = Object(__WEBPACK_IMPORTED_MODULE_1_redux__["createStore"])(__WEBPACK_IMPORTED_MODULE_3__reducer__["a" /* default */]);
 /* harmony default export */ __webpack_exports__["a"] = (function (Page) {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_redux__["Provider"], {
-    store: store,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    }
-  }, Page);
+  return function () {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_redux__["Provider"], {
+      store: store,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 7
+      }
+    }, Page);
+  };
 });
 
 /***/ }),

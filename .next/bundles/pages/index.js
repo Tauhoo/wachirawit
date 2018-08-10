@@ -15,34 +15,31 @@ var _jsxFileName = "/home/tauhoo/Documents/wachirawit/components/htmlTemplate.js
 
 
 /* harmony default export */ __webpack_exports__["a"] = (function (Element) {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 3
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_head___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("title", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    }
-  }, "Wachirawit"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("meta", {
-    name: "viewport",
-    content: "initial-scale=1.0, width=device-width",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    }
-  })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("style", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    }
-  }, "\n      body, html {\n        margin: 0px;\n        padding: 0px;\n      }\n    "), Element);
+  return function (props) {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Fragment, null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_head___default.a, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 4
+      }
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("title", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 5
+      }
+    }, "Wachirawit"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("meta", {
+      name: "viewport",
+      content: "initial-scale=1.0, width=device-width",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 6
+      }
+    })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("style", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 8
+      }
+    }, "\n      body, html {\n        margin: 0px;\n        padding: 0px;\n      }\n    "), Element);
+  };
 });
 
 /***/ }),
@@ -426,85 +423,6 @@ function isPlainObject(value) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./node_modules/next/dist/lib/head.js")
-
-
-/***/ }),
-
-/***/ "./node_modules/next/node_modules/hoist-non-react-statics/index.js":
-/***/ (function(module, exports, __webpack_require__) {
-
-/**
- * Copyright 2015, Yahoo! Inc.
- * Copyrights licensed under the New BSD License. See the accompanying LICENSE file for terms.
- */
-(function (global, factory) {
-     true ? module.exports = factory() :
-    typeof define === 'function' && define.amd ? define(factory) :
-    (global.hoistNonReactStatics = factory());
-}(this, (function () {
-    'use strict';
-    
-    var REACT_STATICS = {
-        childContextTypes: true,
-        contextTypes: true,
-        defaultProps: true,
-        displayName: true,
-        getDefaultProps: true,
-        getDerivedStateFromProps: true,
-        mixins: true,
-        propTypes: true,
-        type: true
-    };
-    
-    var KNOWN_STATICS = {
-        name: true,
-        length: true,
-        prototype: true,
-        caller: true,
-        callee: true,
-        arguments: true,
-        arity: true
-    };
-    
-    var defineProperty = Object.defineProperty;
-    var getOwnPropertyNames = Object.getOwnPropertyNames;
-    var getOwnPropertySymbols = Object.getOwnPropertySymbols;
-    var getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
-    var getPrototypeOf = Object.getPrototypeOf;
-    var objectPrototype = getPrototypeOf && getPrototypeOf(Object);
-    
-    return function hoistNonReactStatics(targetComponent, sourceComponent, blacklist) {
-        if (typeof sourceComponent !== 'string') { // don't hoist over string (html) components
-            
-            if (objectPrototype) {
-                var inheritedComponent = getPrototypeOf(sourceComponent);
-                if (inheritedComponent && inheritedComponent !== objectPrototype) {
-                    hoistNonReactStatics(targetComponent, inheritedComponent, blacklist);
-                }
-            }
-            
-            var keys = getOwnPropertyNames(sourceComponent);
-            
-            if (getOwnPropertySymbols) {
-                keys = keys.concat(getOwnPropertySymbols(sourceComponent));
-            }
-            
-            for (var i = 0; i < keys.length; ++i) {
-                var key = keys[i];
-                if (!REACT_STATICS[key] && !KNOWN_STATICS[key] && (!blacklist || !blacklist[key])) {
-                    var descriptor = getOwnPropertyDescriptor(sourceComponent, key);
-                    try { // Avoid failures from read-only properties
-                        defineProperty(targetComponent, key, descriptor);
-                    } catch (e) {}
-                }
-            }
-            
-            return targetComponent;
-        }
-        
-        return targetComponent;
-    };
-})));
 
 
 /***/ }),
@@ -2277,14 +2195,25 @@ var _jsxFileName = "/home/tauhoo/Documents/wachirawit/pages/index.js";
 
 
 
-var Template = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Fragment, null, Object(__WEBPACK_IMPORTED_MODULE_1__components_htmlTemplate__["a" /* default */])(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", {
+var Template = Object(__WEBPACK_IMPORTED_MODULE_1__components_htmlTemplate__["a" /* default */])(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 4
   }
-}, "ice")));
+}, "ice"));
+var ReduxComponent = Object(__WEBPACK_IMPORTED_MODULE_2__redux_reduxComponent__["a" /* default */])(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Template, {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 5
+  }
+}));
 /* harmony default export */ __webpack_exports__["default"] = (function () {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Fragment, null, Object(__WEBPACK_IMPORTED_MODULE_2__redux_reduxComponent__["a" /* default */])(Template));
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(ReduxComponent, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    }
+  });
 });
     (function (Component, route) {
       if(!Component) return
@@ -2350,13 +2279,15 @@ var _jsxFileName = "/home/tauhoo/Documents/wachirawit/redux/reduxComponent.js";
 
 var store = Object(__WEBPACK_IMPORTED_MODULE_1_redux__["b" /* createStore */])(__WEBPACK_IMPORTED_MODULE_3__reducer__["a" /* default */]);
 /* harmony default export */ __webpack_exports__["a"] = (function (Page) {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_redux__["a" /* Provider */], {
-    store: store,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    }
-  }, Page);
+  return function () {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_redux__["a" /* Provider */], {
+      store: store,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 7
+      }
+    }, Page);
+  };
 });
 
 /***/ }),

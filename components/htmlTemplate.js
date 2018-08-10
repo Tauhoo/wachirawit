@@ -1,6 +1,6 @@
 import Head from "next/head";
-export default Element => (
-  <div>
+export default Element => props => (
+  <>
     <Head>
       <title>Wachirawit</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -14,5 +14,5 @@ export default Element => (
     `}
     </style>
     {Element}
-  </div>
+  </>
 );
