@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import React, { Component } from "react";
+const Container = styled.div`
+  float: left;
+`;
 const Img = styled.img`
   height: 150px;
   width: 150px;
@@ -9,6 +12,11 @@ const Img = styled.img`
   }
 `;
 
+const Topic = styled.span`
+  font-family: "Passion one";
+  display: block;
+  padding-left: ${props => props.textlext};
+`;
 export default class extends Component {
   constructor(props) {
     super(props);
@@ -22,21 +30,22 @@ export default class extends Component {
   }
   onMouseEnter = () => {
     this.setState({ isHover: true });
-    console.log(this.state.urlA);
   };
   onMouseLeave = () => {
     this.setState({ isHover: false });
-    console.log(this.props.url);
   };
   render() {
     return (
-      <Img
-        src={this.state.isHover ? this.state.urlA : this.props.url}
-        height={this.props.size}
-        width={this.props.size}
-        onMouseEnter={this.onMouseEnter}
-        onMouseLeave={this.onMouseLeave}
-      />
+      <Container>
+        <Img
+          src={this.state.isHover ? this.state.urlA : this.props.url}
+          height={this.props.size}
+          width={this.props.size}
+          onMouseEnter={this.onMouseEnter}
+          onMouseLeave={this.onMouseLeave}
+        />
+        <Topic textleft={this.props.textleft}>{this.props.name}</Topic>
+      </Container>
     );
   }
 }

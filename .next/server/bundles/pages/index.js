@@ -126,7 +126,7 @@ var Container = __WEBPACK_IMPORTED_MODULE_2_styled_components___default.a.div(_t
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__icon__ = __webpack_require__("./components/icon.js");
 var _jsxFileName = "/home/tauhoo/Documents/wachirawit/components/bottomBar.js";
 
-var _templateObject = /*#__PURE__*/ _taggedTemplateLiteral(["\n  top: 95vh;\n  left: 45vw;\n  position: absolute;\n  transform: translate(-50%, -100%);\n  width: 600px;\n  @media (max-width: 750px) {\n    width: calc(100vw*4/5);\n  }\n"]);
+var _templateObject = /*#__PURE__*/ _taggedTemplateLiteral(["\n  top: 95vh;\n  left: 45vw;\n  position: absolute;\n  transform: translate(-50%, -100%);\n  width: 600px;\n  @media (max-width: 750px) {\n    width: calc(100vw * 4 / 5);\n  }\n"]);
 
 
 
@@ -144,6 +144,8 @@ var Container = __WEBPACK_IMPORTED_MODULE_1_styled_components___default.a.div(_t
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__icon__["a" /* default */], {
     url: "/static/profileLogo.png",
     size: "150px",
+    name: "Profile",
+    textLeft: "100px",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
@@ -151,6 +153,7 @@ var Container = __WEBPACK_IMPORTED_MODULE_1_styled_components___default.a.div(_t
   }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__icon__["a" /* default */], {
     url: "/static/skillLogo.png",
     size: "150px",
+    name: "Skill",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 18
@@ -158,6 +161,7 @@ var Container = __WEBPACK_IMPORTED_MODULE_1_styled_components___default.a.div(_t
   }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__icon__["a" /* default */], {
     url: "/static/facebookLogo.png",
     size: "150px",
+    name: "Facebook",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 19
@@ -165,55 +169,12 @@ var Container = __WEBPACK_IMPORTED_MODULE_1_styled_components___default.a.div(_t
   }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__icon__["a" /* default */], {
     url: "/static/emailLogo.png",
     size: "150px",
-    style: {
-      marginLeft: '20px'
-    },
+    name: "Email",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 20
     }
   }));
-});
-
-/***/ }),
-
-/***/ "./components/htmlTemplate.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_head__ = __webpack_require__("next/head");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_head___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_next_head__);
-var _jsxFileName = "/home/tauhoo/Documents/wachirawit/components/htmlTemplate.js";
-
-
-/* harmony default export */ __webpack_exports__["a"] = (function (Element) {
-  return function (props) {
-    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Fragment, null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_head___default.a, {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 4
-      }
-    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("title", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 5
-      }
-    }, "Wachirawit"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("meta", {
-      name: "viewport",
-      content: "initial-scale=1.0, width=device-width",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 6
-      }
-    })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("style", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 8
-      }
-    }, "\n      body, html {\n        margin: 0px;\n        padding: 0px;\n        background-color: #9b59b6;\n      }\n    "), Element);
-  };
 });
 
 /***/ }),
@@ -229,7 +190,9 @@ var _jsxFileName = "/home/tauhoo/Documents/wachirawit/components/htmlTemplate.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
 var _jsxFileName = "/home/tauhoo/Documents/wachirawit/components/icon.js";
 
-var _templateObject = /*#__PURE__*/ _taggedTemplateLiteral(["\n  height: 150px;\n  width: 150px;\n  @media (max-width: 750px) {\n    height: calc(100vw / 5);\n    width: calc(100vw / 5);\n  }\n"]);
+var _templateObject = /*#__PURE__*/ _taggedTemplateLiteral(["\n  float: left;\n"]),
+    _templateObject2 = /*#__PURE__*/ _taggedTemplateLiteral(["\n  height: 150px;\n  width: 150px;\n  @media (max-width: 750px) {\n    height: calc(100vw / 5);\n    width: calc(100vw / 5);\n  }\n"]),
+    _templateObject3 = /*#__PURE__*/ _taggedTemplateLiteral(["\n  font-family: \"Passion one\";\n  display: block;\n  padding-left: ", ";\n"]);
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -249,7 +212,11 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var Img = __WEBPACK_IMPORTED_MODULE_0_styled_components___default.a.img(_templateObject);
+var Container = __WEBPACK_IMPORTED_MODULE_0_styled_components___default.a.div(_templateObject);
+var Img = __WEBPACK_IMPORTED_MODULE_0_styled_components___default.a.img(_templateObject2);
+var Topic = __WEBPACK_IMPORTED_MODULE_0_styled_components___default.a.span(_templateObject3, function (props) {
+  return props.textlext;
+});
 
 var _default =
 /*#__PURE__*/
@@ -270,8 +237,6 @@ function (_Component) {
         _this.setState({
           isHover: true
         });
-
-        console.log(_this.state.urlA);
       }
     });
     Object.defineProperty(_assertThisInitialized(_this), "onMouseLeave", {
@@ -282,8 +247,6 @@ function (_Component) {
         _this.setState({
           isHover: false
         });
-
-        console.log(_this.props.url);
       }
     });
     var url = props.url;
@@ -298,7 +261,12 @@ function (_Component) {
   _createClass(_default, [{
     key: "render",
     value: function render() {
-      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(Img, {
+      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(Container, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 39
+        }
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(Img, {
         src: this.state.isHover ? this.state.urlA : this.props.url,
         height: this.props.size,
         width: this.props.size,
@@ -306,9 +274,15 @@ function (_Component) {
         onMouseLeave: this.onMouseLeave,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 40
         }
-      });
+      }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(Topic, {
+        textleft: this.props.textleft,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 47
+        }
+      }, this.props.name));
     }
   }]);
 
@@ -374,31 +348,23 @@ var Container = __WEBPACK_IMPORTED_MODULE_1_styled_components___default.a.div(_t
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_htmlTemplate__ = __webpack_require__("./components/htmlTemplate.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__redux_reduxComponent__ = __webpack_require__("./redux/reduxComponent.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_body__ = __webpack_require__("./components/body.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__redux_reduxComponent__ = __webpack_require__("./redux/reduxComponent.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_body__ = __webpack_require__("./components/body.js");
 var _jsxFileName = "/home/tauhoo/Documents/wachirawit/pages/index.js";
 
 
 
-
-var Template = Object(__WEBPACK_IMPORTED_MODULE_1__components_htmlTemplate__["a" /* default */])(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_body__["a" /* default */], {
+var ReduxComponent = Object(__WEBPACK_IMPORTED_MODULE_1__redux_reduxComponent__["a" /* default */])(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_body__["a" /* default */], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 5
-  }
-}));
-var ReduxComponent = Object(__WEBPACK_IMPORTED_MODULE_2__redux_reduxComponent__["a" /* default */])(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Template, {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6
+    lineNumber: 4
   }
 }));
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(ReduxComponent, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 6
     }
   });
 });
@@ -467,13 +433,6 @@ var store = Object(__WEBPACK_IMPORTED_MODULE_1_redux__["createStore"])(__WEBPACK
 
 module.exports = __webpack_require__("./pages/index.js");
 
-
-/***/ }),
-
-/***/ "next/head":
-/***/ (function(module, exports) {
-
-module.exports = require("next/head");
 
 /***/ }),
 
