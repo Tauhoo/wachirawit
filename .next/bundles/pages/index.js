@@ -94,6 +94,9 @@ var Container = __WEBPACK_IMPORTED_MODULE_1_styled_components__["a" /* default *
   }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__icon__["a" /* default */], {
     url: "/static/emailLogo.png",
     size: "150px",
+    style: {
+      marginLeft: '20px'
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 20
@@ -166,9 +169,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
@@ -187,8 +190,35 @@ function (_Component) {
     _classCallCheck(this, _default);
 
     _this = _possibleConstructorReturn(this, (_default.__proto__ || Object.getPrototypeOf(_default)).call(this, props));
+    Object.defineProperty(_assertThisInitialized(_this), "onMouseEnter", {
+      configurable: true,
+      enumerable: true,
+      writable: true,
+      value: function value() {
+        _this.setState({
+          isHover: true
+        });
+
+        console.log(_this.state.urlA);
+      }
+    });
+    Object.defineProperty(_assertThisInitialized(_this), "onMouseLeave", {
+      configurable: true,
+      enumerable: true,
+      writable: true,
+      value: function value() {
+        _this.setState({
+          isHover: false
+        });
+
+        console.log(_this.props.url);
+      }
+    });
+    var url = props.url;
+    var length = url.length;
     _this.state = {
-      isHover: false
+      isHover: false,
+      urlA: url.substring(0, length - 4) + "A" + url.substring(length - 4, length)
     };
     return _this;
   }
@@ -197,12 +227,14 @@ function (_Component) {
     key: "render",
     value: function render() {
       return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(Img, {
-        src: this.state ? this.props.url : this.props.url,
+        src: this.state.isHover ? this.state.urlA : this.props.url,
         height: this.props.size,
         width: this.props.size,
+        onMouseEnter: this.onMouseEnter,
+        onMouseLeave: this.onMouseLeave,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 33
         }
       });
     }
