@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import React, { Component } from "react";
+import { connect } from "react-redux";
+import { changePage } from "../redux/action";
+
 const Container = styled.div`
   float: left;
 `;
@@ -21,7 +24,7 @@ const Topic = styled.span`
     padding-left: calc(${props => props.textleftres});
   }
 `;
-export default class extends Component {
+class Icon extends Component {
   constructor(props) {
     super(props);
     var url = props.url;
@@ -34,10 +37,13 @@ export default class extends Component {
   }
   onMouseEnter = () => {
     this.setState({ isHover: true });
-    console.log("enter");
   };
   onMouseLeave = () => {
     this.setState({ isHover: false });
+  };
+  onClick = () => {
+    console.log(this.props.page);
+    this.props.changePage(this.props.number);
   };
   render() {
     return (
@@ -48,6 +54,7 @@ export default class extends Component {
           width={this.props.size}
           onMouseEnter={this.onMouseEnter}
           onMouseLeave={this.onMouseLeave}
+          onClick={this.onClick}
         />
         <Topic
           textleft={this.props.textLeft}
@@ -59,3 +66,20 @@ export default class extends Component {
     );
   }
 }
+
+const mapStateToProps = state => {
+  return {
+    page: state.page
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    changePage: number => dispatch(changePage(number))
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Icon);

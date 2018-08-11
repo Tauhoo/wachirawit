@@ -20,6 +20,7 @@ export default () => (
       name="Profile"
       textLeft="100px"
       textLeftRes="54%"
+      number={1}
     />
     <Icon
       url="/static/skillLogo.png"
@@ -27,6 +28,7 @@ export default () => (
       name="Skill"
       textLeft="100px"
       textLeftRes="60%"
+      number={2}
     />
     <Icon
       url="/static/facebookLogo.png"
@@ -34,6 +36,7 @@ export default () => (
       name="Facebook"
       textLeft="75px"
       textLeftRes="35%"
+      number={3}
     />
     <Icon
       url="/static/emailLogo.png"
@@ -41,6 +44,7 @@ export default () => (
       name="Email"
       textLeft="75px"
       textLeftRes="42%"
+      number={4}
     />
   </Container>
 );

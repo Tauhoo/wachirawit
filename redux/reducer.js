@@ -1,7 +1,7 @@
 export default (state = {}, action) => {
   switch (action.type) {
-    case "PAGE_STATE":
-      return { page: action.state, ...state };
+    case "CHANGE_PAGE_STATE":
+      return Object.assign({}, state, { page: action.state });
       break;
     default:
       return state;

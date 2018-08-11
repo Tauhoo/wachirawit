@@ -8,14 +8,19 @@ const Name = styled.span`
   display: inline-block;
   color: #f1c40f;
   -webkit-text-stroke: 1px black;
+  transition: 0.6s;
   @media (max-width: 1000px) {
     font-size: 14vw;
+  }
+  &:hover {
+    font-size: 11vw;
   }
 `;
 
 const NameContainer = styled.div`
   position: absolute;
   transform: translate(-50%, -50%);
+  text-align: center;
   top: 45vh;
   left: 50vw;
 `;
