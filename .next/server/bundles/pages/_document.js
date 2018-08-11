@@ -86,7 +86,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_styled_components___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_styled_components__);
 var _jsxFileName = "/home/tauhoo/Documents/wachirawit/pages/_document.js";
 
-var _templateObject = /*#__PURE__*/ _taggedTemplateLiteral(["\n  body {\n    margin: 0;\n    background: #9b59b6;\n  }\n  * {\n    box-sizing: border-box;\n  }\n"]);
+var _templateObject = /*#__PURE__*/ _taggedTemplateLiteral(["\n  body {\n    margin: 0;\n    background: #9b59b6;\n    overflow: hidden;\n    font-size: 16px;\n  }\n  * {\n    box-sizing: border-box;\n  }\n"]);
 
 
 
@@ -128,45 +128,45 @@ function (_Document) {
       var main = sheet.collectStyles(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_document__["Main"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 19
         }
       }));
       var styleTags = sheet.getStyleElement();
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("html", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 23
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_document__["Head"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 24
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("title", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 25
         }
       }, "Wachirawit"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("meta", {
         name: "theme-color",
         content: "#000",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 26
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("meta", {
         name: "description",
         content: "Hi! I'm Chun Rapeepat, Nice to meet you here. I'm the one who loved in computer such as Web Technology, Machine Learning, etc. and also interested in Mathematic, StartUp & Bussiness too.",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
+          lineNumber: 27
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("meta", {
         name: "keywords",
         content: "chun, chunza2542, Chun Rapeepat, Programming, NoobProgramming, NoobProgrammer, thechun, resume, portfolio, site",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29
+          lineNumber: 31
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("link", {
         rel: "shortcut icon",
@@ -174,37 +174,37 @@ function (_Document) {
         type: "image/x-icon",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 35
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("link", {
         href: "https://fonts.googleapis.com/css?family=Passion+One",
         rel: "stylesheet",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 40
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("meta", {
         name: "viewport",
         content: "width=device-width",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
+          lineNumber: 44
         }
       }), styleTags), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("body", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 47
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
         className: "root",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 48
         }
       }, main), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_document__["NextScript"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47
+          lineNumber: 49
         }
       })));
     }

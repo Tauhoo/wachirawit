@@ -15,7 +15,11 @@ const Img = styled.img`
 const Topic = styled.span`
   font-family: "Passion one";
   display: block;
-  padding-left: ${props => props.textlext};
+  padding-top: 10px;
+  padding-left: ${props => props.textleft};
+  @media (max-width: 750px) {
+    padding-left: calc(${props => props.textleftres});
+  }
 `;
 export default class extends Component {
   constructor(props) {
@@ -30,6 +34,7 @@ export default class extends Component {
   }
   onMouseEnter = () => {
     this.setState({ isHover: true });
+    console.log("enter");
   };
   onMouseLeave = () => {
     this.setState({ isHover: false });
@@ -44,7 +49,12 @@ export default class extends Component {
           onMouseEnter={this.onMouseEnter}
           onMouseLeave={this.onMouseLeave}
         />
-        <Topic textleft={this.props.textleft}>{this.props.name}</Topic>
+        <Topic
+          textleft={this.props.textLeft}
+          textleftres={this.props.textLeftRes}
+        >
+          {this.props.name}
+        </Topic>
       </Container>
     );
   }

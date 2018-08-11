@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Icon from "./icon";
 
 const Container = styled.div`
-  top: 95vh;
+  top: 97vh;
   left: 45vw;
   position: absolute;
   transform: translate(-50%, -100%);
@@ -14,9 +14,33 @@ const Container = styled.div`
 
 export default () => (
   <Container>
-    <Icon url="/static/profileLogo.png" size="150px" name="Profile" textLeft="100px"/>
-    <Icon url="/static/skillLogo.png" size="150px" name="Skill" />
-    <Icon url="/static/facebookLogo.png" size="150px" name="Facebook" />
-    <Icon url="/static/emailLogo.png" size="150px" name="Email" />
+    <Icon
+      url="/static/profileLogo.png"
+      size="150px"
+      name="Profile"
+      textLeft="100px"
+      textLeftRes="54%"
+    />
+    <Icon
+      url="/static/skillLogo.png"
+      size="150px"
+      name="Skill"
+      textLeft="100px"
+      textLeftRes="60%"
+    />
+    <Icon
+      url="/static/facebookLogo.png"
+      size="150px"
+      name="Facebook"
+      textLeft="75px"
+      textLeftRes="35%"
+    />
+    <Icon
+      url="/static/emailLogo.png"
+      size="150px"
+      name="Email"
+      textLeft="75px"
+      textLeftRes="42%"
+    />
   </Container>
 );

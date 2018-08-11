@@ -5,6 +5,8 @@ injectGlobal`
   body {
     margin: 0;
     background: #9b59b6;
+    overflow: hidden;
+    font-size: 16px;
   }
   * {
     box-sizing: border-box;

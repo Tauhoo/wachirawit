@@ -1,8 +1,11 @@
 import styled from "styled-components";
 
 const Container = styled.div`
+  overflow: hidden;
+  height:100vh;
   width: 100vw;
-  height: 100vh;
+  margin: 0px;
+
 `;
 
-export default Element => () => <Container>{Element}</Container>;
+export default Container;
