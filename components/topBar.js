@@ -13,12 +13,17 @@ const Container = styled.div`
 
 class TopBar extends Component {
   onClick = () => {
-    this.props.changePage(0)
-  }
+    this.props.changePage(0);
+  };
 
   render = () => (
     <Container>
-      <img src="/static/logo.png" height="60px" width="60px" onClick={this.onClick}/>
+      <img
+        src="/static/logo.png"
+        height="60px"
+        width="60px"
+        onClick={this.onClick}
+      />
       <img
         src="/static/topic.png"
         height="30px"

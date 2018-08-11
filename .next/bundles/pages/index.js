@@ -234,7 +234,7 @@ var mapStateToProps = function mapStateToProps(state) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_styled_components__ = __webpack_require__("./node_modules/styled-components/dist/styled-components.browser.esm.js");
 var _jsxFileName = "/home/tauhoo/Documents/wachirawit/components/content/home.js";
 
-var _templateObject = /*#__PURE__*/ _taggedTemplateLiteral(["\n  font-family: \"Passion One\";\n  font-size: 10vw;\n  text-shadow: 8px 8px black;\n  display: inline-block;\n  color: #f1c40f;\n  -webkit-text-stroke: 1px black;\n  transition: 0.6s;\n  @media (max-width: 1000px) {\n    font-size: 14vw;\n  }\n  &:hover {\n    font-size: 11vw;\n  }\n"]),
+var _templateObject = /*#__PURE__*/ _taggedTemplateLiteral(["\n  font-family: \"Passion One\";\n  font-size: 10vw;\n  text-shadow: 8px 8px black;\n  display: inline-block;\n  color: #f1c40f;\n  -webkit-text-stroke: 1px black;\n  transition: 0.6s;\n  @media (max-width: 1000px) {\n    font-size: 14vw;\n  }\n  &:hover {\n    transform: scale(1.1);\n  }\n"]),
     _templateObject2 = /*#__PURE__*/ _taggedTemplateLiteral(["\n  position: absolute;\n  transform: translate(-50%, -50%);\n  text-align: center;\n  top: 45vh;\n  left: 50vw;\n"]);
 
 
@@ -502,7 +502,7 @@ function (_Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 22
+            lineNumber: 27
           }
         }));
       }

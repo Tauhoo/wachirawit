@@ -13,7 +13,7 @@ const Name = styled.span`
     font-size: 14vw;
   }
   &:hover {
-    font-size: 11vw;
+    transform: scale(1.1);
   }
 `;
 
