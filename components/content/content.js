@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Home from "./home.js";
+import Profile from "./profile.js";
 import styled from "styled-components";
 import { connect } from "react-redux";
 
@@ -16,6 +17,7 @@ class Content extends Component {
   render = () => (
     <Container page={this.props.page}>
       <Home />
+      <Profile />
     </Container>
   );
 }

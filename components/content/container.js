@@ -2,10 +2,9 @@ import styled from "styled-components";
 
 const Container = styled.div`
   overflow: hidden;
-  height:100vh;
+  height: 100vh;
   width: 100vw;
-  margin: 0px;
-
+  display: inline-block;
 `;
 
 export default Container;
