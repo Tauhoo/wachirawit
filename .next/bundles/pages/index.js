@@ -422,7 +422,9 @@ var _jsxFileName = "/home/tauhoo/Documents/wachirawit/components/content/skill.j
     top: "100px",
     left: "10vw",
     src: "/static/skill/html.png",
-    percent: 80 / 100,
+    percent: 85 / 100,
+    topres: "170px",
+    leftres: "20vw",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
@@ -432,40 +434,48 @@ var _jsxFileName = "/home/tauhoo/Documents/wachirawit/components/content/skill.j
     top: "25vh",
     left: "32vw",
     src: "/static/skill/css.png",
-    percent: 60 / 100,
+    percent: 80 / 100,
+    topres: "60vh",
+    leftres: "20vw",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 16
     }
   }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__skillComponent_icon__["a" /* default */], {
     size: "10vw",
     top: "20vh",
     left: "50vw",
     src: "/static/skill/javascript.png",
-    percent: 70 / 100,
+    percent: 80 / 100,
+    topres: "40vh",
+    leftres: "70vw",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 25
     }
   }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__skillComponent_icon__["a" /* default */], {
     size: "12vw",
     top: "40vh",
     left: "60vw",
     src: "/static/skill/react.png",
-    percent: 60 / 100,
+    percent: 75 / 100,
+    topres: "60vh",
+    leftres: "60vw",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 34
     }
   }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__skillComponent_icon__["a" /* default */], {
     size: "12vw",
     top: "50vh",
     left: "75vw",
     src: "/static/skill/redux.png",
-    percent: 50 / 100,
+    percent: 70 / 100,
+    topres: "150px",
+    leftres: "60vw",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 43
     }
   }));
 });
@@ -481,10 +491,10 @@ var _jsxFileName = "/home/tauhoo/Documents/wachirawit/components/content/skill.j
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_styled_components__ = __webpack_require__("./node_modules/styled-components/dist/styled-components.browser.esm.js");
 var _jsxFileName = "/home/tauhoo/Documents/wachirawit/components/content/skillComponent/icon.js";
 
-var _templateObject = /*#__PURE__*/ _taggedTemplateLiteral(["\n  position: absolute;\n  height: ", ";\n  width: ", ";\n  top: ", ";\n  left: calc(200vw + ", ");\n"]),
+var _templateObject = /*#__PURE__*/ _taggedTemplateLiteral(["\n  position: absolute;\n  height: ", ";\n  width: ", ";\n  top: ", ";\n  left: calc(200vw + ", ");\n  @media (max-width: 600px) {\n    top: ", ";\n    left: calc(200vw + ", ");\n  }\n"]),
     _templateObject2 = /*#__PURE__*/ _taggedTemplateLiteral(["\n  position: absolute;\n  height: ", ";\n  width: ", ";\n"]),
-    _templateObject3 = /*#__PURE__*/ _taggedTemplateLiteral(["\n  position: absolute;\n  height: calc(100% * ", ");\n  width: calc(100% * ", ");\n  background-color: ", ";\n  border-radius: 50%;\n  transform: translate(-50%, -50%);\n  top: 50%;\n  left: 50%;\n  &:hover {\n    transform: translate(-50%, -50%) scale(1.3);\n  }\n  transition: 0.1s;\n"]),
-    _templateObject4 = /*#__PURE__*/ _taggedTemplateLiteral(["\n  position: absolute;\n  height: 50%;\n  transform: translate(-50%, -50%);\n  top: 50%;\n  left: 50%;\n  &:hover {\n    transform: translate(-50%, -50%) scale(1.3);\n  }\n  transition: 0.1s;\n"]);
+    _templateObject3 = /*#__PURE__*/ _taggedTemplateLiteral(["\n  position: absolute;\n  height: calc(100% * ", ");\n  width: calc(100% * ", ");\n  background-color: ", ";\n  border-radius: 50%;\n  transform: translate(-50%, -50%);\n  top: 50%;\n  left: 50%;\n  @media (max-width: 600px) {\n    transform: translate(-50%, -50%) scale(2);\n  }\n  transition: 0.1s;\n"]),
+    _templateObject4 = /*#__PURE__*/ _taggedTemplateLiteral(["\n  position: absolute;\n  height: 60%;\n  transform: translate(-50%, -50%);\n  top: 50%;\n  left: 50%;\n  @media (max-width: 600px) {\n    height: 100%;\n  }\n  &:hover {\n    transform: translate(-50%, -50%) scale(1.3);\n  }\n  transition: 0.1s;\n"]);
 
 
 
@@ -499,6 +509,10 @@ var Container = __WEBPACK_IMPORTED_MODULE_1_styled_components__["b" /* default *
   return props.top;
 }, function (props) {
   return props.left;
+}, function (props) {
+  return props.topres;
+}, function (props) {
+  return props.leftres;
 });
 var AuraGroup = __WEBPACK_IMPORTED_MODULE_1_styled_components__["b" /* default */].div(_templateObject2, function (props) {
   return props.size;
@@ -518,35 +532,37 @@ var Img = __WEBPACK_IMPORTED_MODULE_1_styled_components__["b" /* default */].img
     size: props.size,
     top: props.top,
     left: props.left,
+    topres: props.topres,
+    leftres: props.leftres,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 52
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(AuraGroup, {
     size: props.size,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 59
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Aura, {
     color: "#ecf0f1",
     size: 1,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 60
     }
   }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Aura, {
     color: "rgb(46, 204, 133)",
     size: props.percent,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 61
     }
   }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Img, {
     src: props.src,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 62
     }
   })));
 });
