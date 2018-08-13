@@ -42,8 +42,15 @@ class Icon extends Component {
     this.setState({ isHover: false });
   };
   onClick = () => {
-    console.log(this.props.page);
-    this.props.changePage(this.props.number);
+    const number = this.props.number
+    if(number == 3){
+      window.open('https://www.facebook.com/tauhoo.ice', '_blank');
+      return
+    }else if(number == 4){
+      window.location.href = "mailto:mail@example.org";
+      return
+    }
+    this.props.changePage(number);
   };
   render() {
     return (

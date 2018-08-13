@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import Home from "./home.js";
 import Profile from "./profile.js";
+import Skill from "./skill.js";
 import styled from "styled-components";
 import { connect } from "react-redux";
 
 const Container = styled.div`
   overflow: hidden;
-  width: 400vw;
+  width: 300vw;
   position: absolute;
   transition: 0.6s;
   left: ${props => props.page * -100}vw;
@@ -18,6 +19,7 @@ class Content extends Component {
     <Container page={this.props.page}>
       <Home />
       <Profile />
+      <Skill />
     </Container>
   );
 }

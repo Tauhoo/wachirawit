@@ -29,11 +29,11 @@ const Icon = styled.img`
 
 const Topic = styled.span`
   font-family: "Passion One";
-  font-size: 2em;
+  font-size: 2.5em;
   width: 100%;
   display: block;
   text-align: center;
-  color: #f1c40f;
+  color: #f39c12;
   -webkit-text-stroke: 1px black;
   text-shadow: 5px 5px black;
   @media (max-width: 970px) {
@@ -46,7 +46,7 @@ const Topic = styled.span`
 
 const Text = styled.span`
   font-family: "Passion One";
-  font-size: 1.2em;
+  font-size: 2em;
   width: 100%;
   display: block;
   color: black;
@@ -56,6 +56,12 @@ const Text = styled.span`
   @media (max-width: 970px) {
     float: left;
     text-align: left;
+    font-size: 1.6em;
+  }
+  @media (max-width: 560px) {
+    float: left;
+    text-align: left;
+    font-size: 1.2em;
   }
 `;
 
@@ -71,7 +77,7 @@ const Detail = styled.div`
 
 const PreDetail = styled.div`
   @media (max-width: 970px) {
-    padding-top: 13vh;
+    padding-top: 14vh;
   }
 `;
 
@@ -90,7 +96,7 @@ const text =
   "iiooooooooooooooooooooooooooooo" ;
 
 export default () => (
-  <Container style={{ backgroundColor: "#1abc9c" }}>
+  <Container style={{ backgroundColor: "#C4E538" }}>
     <PreDetail>
       <Content
         src="/static/profile/education.png"
