@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import NamePoint from "./NamePoint";
 
 const Container = styled.div`
   position: absolute;
@@ -56,10 +57,11 @@ export default props => (
     topres={props.topres}
     leftres={props.leftres}
   >
+    <NamePoint deg={props.deg} name={props.name}/>
     <AuraGroup size={props.size}>
       <Aura color="#ecf0f1" size={1} />
       <Aura color="rgb(46, 204, 133)" size={props.percent} />
-      <Img src={props.src} />
+      <Img src={props.src}/>
     </AuraGroup>
   </Container>
 );

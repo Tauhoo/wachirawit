@@ -379,8 +379,8 @@ var _jsxFileName = "/home/tauhoo/Documents/wachirawit/components/content/profile
 var _templateObject = /*#__PURE__*/ _taggedTemplateLiteral(["\n  height: 100vh;\n  width: calc(100% / 3);\n  display: inline-block;\n  @media (max-width: 970px) {\n    height: calc(100% / 6);\n    width: 100%;\n    display: block;\n    margin-top: 20px;\n  }\n"]),
     _templateObject2 = /*#__PURE__*/ _taggedTemplateLiteral(["\n  width: 40%;\n  transform: translateX(-50%);\n  margin-left: 50%;\n  margin-top: 80px;\n  @media (max-width: 970px) {\n    width: 100px;\n    transform: translateX(0%);\n    margin-left: 10px;\n    margin-top: 0px;\n    display: inline-block;\n  }\n"]),
     _templateObject3 = /*#__PURE__*/ _taggedTemplateLiteral(["\n  font-family: \"Passion One\";\n  font-size: 2.5em;\n  width: 100%;\n  display: block;\n  text-align: center;\n  color: #f39c12;\n  -webkit-text-stroke: 1px black;\n  text-shadow: 5px 5px black;\n  @media (max-width: 970px) {\n    width: calc(100% - 100vh / 3);\n    float: left;\n    text-align: left;\n    margin-left: 30px;\n  }\n"]),
-    _templateObject4 = /*#__PURE__*/ _taggedTemplateLiteral(["\n  font-family: \"Passion One\";\n  font-size: 2em;\n  width: 100%;\n  display: block;\n  color: black;\n  text-align: center;\n  padding: 12px 30px 0px 30px;\n  word-wrap: break-word;\n  @media (max-width: 970px) {\n    float: left;\n    text-align: left;\n    font-size: 1.6em;\n  }\n  @media (max-width: 560px) {\n    float: left;\n    text-align: left;\n    font-size: 1.2em;\n  }\n"]),
-    _templateObject5 = /*#__PURE__*/ _taggedTemplateLiteral(["\n  display: block;\n  overflow: hidden;\n  @media (max-width: 970px) {\n    display: inline-block;\n    vertical-align: top;\n    width: calc(100% - 110px );\n  }\n"]),
+    _templateObject4 = /*#__PURE__*/ _taggedTemplateLiteral(["\n  font-family: \"Passion One\";\n  font-size: 1.7em;\n  width: 100%;\n  display: block;\n  color: black;\n  text-align: center;\n  padding: 12px 30px 0px 30px;\n  word-wrap: break-word;\n  @media (max-width: 970px) {\n    float: left;\n    text-align: left;\n    font-size: 1.2em;\n  }\n  @media (max-width: 560px) {\n    float: left;\n    text-align: left;\n    font-size: 1em;\n  }\n"]),
+    _templateObject5 = /*#__PURE__*/ _taggedTemplateLiteral(["\n  display: block;\n  overflow: hidden;\n  @media (max-width: 970px) {\n    display: inline-block;\n    vertical-align: top;\n    width: calc(100% - 110px);\n  }\n"]),
     _templateObject6 = /*#__PURE__*/ _taggedTemplateLiteral(["\n  @media (max-width: 970px) {\n    padding-top: 14vh;\n  }\n"]);
 
 
@@ -426,7 +426,9 @@ var Content = function Content(props) {
   }, props.text)));
 };
 
-var text = "iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii" + "iiooooooooooooooooooooooooooooo";
+var passion = "I love to make the beautiful website and hope" + " that I will have chance to make a big cool website in some day.";
+var education = "I'm currently studying for a bachelor's degree at Kasetsart University. " + "My major's computer engineering.";
+var story = "Hello, My name's Wachirawit Wacharak. I'm 20 years old. I live with family" + " in outskirt of bankok in Thailand";
 /* harmony default export */ __webpack_exports__["a"] = (function () {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__container__["a" /* default */], {
     style: {
@@ -434,36 +436,36 @@ var text = "iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii" 
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99
+      lineNumber: 107
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(PreDetail, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 100
+      lineNumber: 108
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Content, {
     src: "/static/profile/education.png",
     name: "Education",
-    text: text,
+    text: education,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 101
+      lineNumber: 109
     }
   }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Content, {
     src: "/static/profile/story.png",
     name: "Story",
-    text: text,
+    text: story,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106
+      lineNumber: 114
     }
   }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Content, {
     src: "/static/profile/passion.png",
     name: "Passion",
-    text: text,
+    text: passion,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107
+      lineNumber: 115
     }
   })));
 });
@@ -495,6 +497,7 @@ var _jsxFileName = "/home/tauhoo/Documents/wachirawit/components/content/skill.j
       lineNumber: 6
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__skillComponent_icon__["a" /* default */], {
+    name: "HTML",
     size: "20vw",
     top: "100px",
     left: "10vw",
@@ -502,11 +505,13 @@ var _jsxFileName = "/home/tauhoo/Documents/wachirawit/components/content/skill.j
     percent: 85 / 100,
     topres: "170px",
     leftres: "20vw",
+    deg: -30,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     }
   }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__skillComponent_icon__["a" /* default */], {
+    name: "CSS",
     size: "15vw",
     top: "25vh",
     left: "32vw",
@@ -514,35 +519,41 @@ var _jsxFileName = "/home/tauhoo/Documents/wachirawit/components/content/skill.j
     percent: 80 / 100,
     topres: "60vh",
     leftres: "20vw",
+    deg: 55,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 18
     }
   }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__skillComponent_icon__["a" /* default */], {
+    name: "Javascript",
     size: "10vw",
     top: "20vh",
     left: "50vw",
     src: "/static/skill/javascript.png",
     percent: 80 / 100,
-    topres: "40vh",
+    topres: "45vh",
     leftres: "70vw",
+    deg: -30,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 29
     }
   }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__skillComponent_icon__["a" /* default */], {
+    name: "React",
     size: "12vw",
     top: "40vh",
     left: "60vw",
     src: "/static/skill/react.png",
     percent: 75 / 100,
-    topres: "60vh",
+    topres: "65vh",
     leftres: "60vw",
+    deg: -30,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 40
     }
   }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__skillComponent_icon__["a" /* default */], {
+    name: "Redux",
     size: "12vw",
     top: "50vh",
     left: "75vw",
@@ -550,11 +561,103 @@ var _jsxFileName = "/home/tauhoo/Documents/wachirawit/components/content/skill.j
     percent: 70 / 100,
     topres: "150px",
     leftres: "60vw",
+    deg: 45,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 51
     }
   }));
+});
+
+/***/ }),
+
+/***/ "./components/content/skillComponent/NamePoint.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_styled_components__ = __webpack_require__("styled-components");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_styled_components___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_styled_components__);
+var _jsxFileName = "/home/tauhoo/Documents/wachirawit/components/content/skillComponent/NamePoint.js";
+
+var _templateObject = /*#__PURE__*/ _taggedTemplateLiteral(["\n  height: 100%;\n  width: 100%;\n  position: absolute;\n"]),
+    _templateObject2 = /*#__PURE__*/ _taggedTemplateLiteral(["\n  position: absolute;\n  top: ", ";\n  left: ", ";\n  height: 5px;\n  width: ", ";\n  background-color: red;\n  transform-origin: top left;\n  transform: rotate(", "deg);\n  border-radius: 2.5px;\n  @media(max-width: 600px){\n    display: ", ";\n  }\n"]),
+    _templateObject3 = /*#__PURE__*/ _taggedTemplateLiteral(["\n  position: absolute;\n  top: ", ";\n  left: ", ";\n  transform: translateY(-100%);\n  @media(max-width: 600px){\n    top: 150%;\n    left: 50%;\n    transform: translateX(-50%);\n  }\n"]),
+    _templateObject4 = /*#__PURE__*/ _taggedTemplateLiteral(["\n  font-family: \"Passion One\";\n  font-size: 1.5em;\n  color: #ecf0f1;\n  padding: 2px;\n"]);
+
+
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+var Container = __WEBPACK_IMPORTED_MODULE_1_styled_components___default.a.div(_templateObject);
+var Line = __WEBPACK_IMPORTED_MODULE_1_styled_components___default.a.div(_templateObject2, function (props) {
+  return props.top;
+}, function (props) {
+  return props.left;
+}, function (props) {
+  return props.width;
+}, function (props) {
+  return props.deg || 0;
+}, function (props) {
+  return props.res;
+});
+var NameContainer = __WEBPACK_IMPORTED_MODULE_1_styled_components___default.a.div(_templateObject3, function (props) {
+  return props.top;
+}, function (props) {
+  return props.left;
+});
+var Text = __WEBPACK_IMPORTED_MODULE_1_styled_components___default.a.span(_templateObject4);
+
+var getPosition = function getPosition(deg, width) {
+  var factor = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : Math.PI / 180;
+  return {
+    y: "calc(".concat(Math.sin(deg * factor) * width + 50, "%)"),
+    x: "calc(".concat(Math.cos(deg * factor) * width + 50, "%)")
+  };
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (function (props) {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Container, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Line, {
+    top: "50%",
+    left: "50%",
+    width: "101%",
+    deg: props.deg,
+    res: "none",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50
+    }
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(NameContainer, {
+    top: getPosition(props.deg, 100).y,
+    left: getPosition(props.deg, 100).x,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
+    }
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Text, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52
+    }
+  }, props.name), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Line, {
+    top: "100%",
+    left: "0%",
+    width: "101%",
+    deg: 0,
+    degres: 0,
+    res: "block",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
+    }
+  })));
 });
 
 /***/ }),
@@ -567,6 +670,7 @@ var _jsxFileName = "/home/tauhoo/Documents/wachirawit/components/content/skill.j
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_styled_components__ = __webpack_require__("styled-components");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_styled_components___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_styled_components__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__NamePoint__ = __webpack_require__("./components/content/skillComponent/NamePoint.js");
 var _jsxFileName = "/home/tauhoo/Documents/wachirawit/components/content/skillComponent/icon.js";
 
 var _templateObject = /*#__PURE__*/ _taggedTemplateLiteral(["\n  position: absolute;\n  height: ", ";\n  width: ", ";\n  top: ", ";\n  left: calc(200vw + ", ");\n  @media (max-width: 600px) {\n    top: ", ";\n    left: calc(200vw + ", ");\n  }\n"]),
@@ -577,6 +681,7 @@ var _templateObject = /*#__PURE__*/ _taggedTemplateLiteral(["\n  position: absol
 
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
 
 
 var Container = __WEBPACK_IMPORTED_MODULE_1_styled_components___default.a.div(_templateObject, function (props) {
@@ -614,33 +719,40 @@ var Img = __WEBPACK_IMPORTED_MODULE_1_styled_components___default.a.img(_templat
     leftres: props.leftres,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 53
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(AuraGroup, {
+  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__NamePoint__["a" /* default */], {
+    deg: props.deg,
+    name: props.name,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 60
+    }
+  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(AuraGroup, {
     size: props.size,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 61
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Aura, {
     color: "#ecf0f1",
     size: 1,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 62
     }
   }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Aura, {
     color: "rgb(46, 204, 133)",
     size: props.percent,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 63
     }
   }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Img, {
     src: props.src,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 64
     }
   })));
 });

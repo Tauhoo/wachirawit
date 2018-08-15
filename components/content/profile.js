@@ -46,7 +46,7 @@ const Topic = styled.span`
 
 const Text = styled.span`
   font-family: "Passion One";
-  font-size: 2em;
+  font-size: 1.7em;
   width: 100%;
   display: block;
   color: black;
@@ -56,12 +56,12 @@ const Text = styled.span`
   @media (max-width: 970px) {
     float: left;
     text-align: left;
-    font-size: 1.6em;
+    font-size: 1.2em;
   }
   @media (max-width: 560px) {
     float: left;
     text-align: left;
-    font-size: 1.2em;
+    font-size: 1em;
   }
 `;
 
@@ -71,7 +71,7 @@ const Detail = styled.div`
   @media (max-width: 970px) {
     display: inline-block;
     vertical-align: top;
-    width: calc(100% - 110px );
+    width: calc(100% - 110px);
   }
 `;
 
@@ -91,9 +91,17 @@ const Content = props => (
   </TopicContainer>
 );
 
-const text =
-  "iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii" +
-  "iiooooooooooooooooooooooooooooo" ;
+const passion =
+  "I love to make the beautiful website and hope" +
+  " that I will have chance to make a big cool website in some day.";
+
+const education =
+  "I'm currently studying for a bachelor's degree at Kasetsart University. " +
+  "My major's computer engineering.";
+
+const story =
+  "Hello, My name's Wachirawit Wacharak. I'm 20 years old. I live with family" +
+  " in outskirt of bankok in Thailand";
 
 export default () => (
   <Container style={{ backgroundColor: "#C4E538" }}>
@@ -101,10 +109,14 @@ export default () => (
       <Content
         src="/static/profile/education.png"
         name="Education"
-        text={text}
+        text={education}
       />
-      <Content src="/static/profile/story.png" name="Story" text={text} />
-      <Content src="/static/profile/passion.png" name="Passion" text={text} />
+      <Content src="/static/profile/story.png" name="Story" text={story} />
+      <Content
+        src="/static/profile/passion.png"
+        name="Passion"
+        text={passion}
+      />
     </PreDetail>
   </Container>
 );
