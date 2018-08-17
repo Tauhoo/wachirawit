@@ -104,7 +104,7 @@ const story =
   " in outskirt of bankok in Thailand";
 
 export default () => (
-  <Container style={{ backgroundColor: "#C4E538" }}>
+  <Container style={{ backgroundColor: "#3498db" }}>
     <PreDetail>
       <Content
         src="/static/profile/education.png"

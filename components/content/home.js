@@ -30,7 +30,7 @@ export default () => (
     <NameContainer>
       <Name>WACHIRAWIT</Name>
       <br />
-      <Name>WACHIRAWIT</Name>
+      <Name>WACHARAK</Name>
     </NameContainer>
   </Container>
 );

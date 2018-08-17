@@ -23,13 +23,16 @@ const Aura = styled.div`
   position: absolute;
   height: calc(100% * ${props => props.size});
   width: calc(100% * ${props => props.size});
-  background-color: ${props => props.color};
+  border-style: solid;
+  border-width: 1vw;
+  border-color: transparent ${props => props.color+' '+props.color } transparent;
   border-radius: 50%;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
+  transform: translate(-50%, -50%) rotate(${props => props.deg*180/100 - 45}deg);
+  top: calc(50% + ${props => props.isShadow*5 || 0}px);
+  left: calc(50% + ${props => props.isShadow*5 || 0}px);
   @media (max-width: 600px) {
-    transform: translate(-50%, -50%) scale(2);
+    transform: translate(-50%, -50%) scale(2)
+      rotate(${props => props.deg*180/100 - 45}deg);
   }
   transition: 0.1s;
 `;
@@ -47,6 +50,7 @@ const Img = styled.img`
     transform: translate(-50%, -50%) scale(1.3);
   }
   transition: 0.1s;
+  z-index: 1000px;
 `;
 
 export default props => (
@@ -57,11 +61,13 @@ export default props => (
     topres={props.topres}
     leftres={props.leftres}
   >
-    <NamePoint deg={props.deg} name={props.name}/>
     <AuraGroup size={props.size}>
-      <Aura color="#ecf0f1" size={1} />
-      <Aura color="rgb(46, 204, 133)" size={props.percent} />
-      <Img src={props.src}/>
+      <Aura color="black" size={1} deg={0} isShadow={1} />
+      <Aura color="black" size={1} deg={props.percent} isShadow={1}/>
+      <Aura color="#27ae60" size={1} deg={0} />
+      <Aura color="#27ae60" size={1} deg={props.percent} />
     </AuraGroup>
+    <NamePoint deg={props.deg} name={props.name} />
+    <Img src={props.src} />
   </Container>
 );
