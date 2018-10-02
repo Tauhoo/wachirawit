@@ -1,5 +1,6 @@
 import Container from "./container";
 import styled from "styled-components";
+import profile from "../../config/profile";
 
 const TopicContainer = styled.div`
   height: 100vh;
@@ -90,33 +91,19 @@ const Content = props => (
     </Detail>
   </TopicContainer>
 );
-
-const passion =
-  "I love to make the beautiful website and hope" +
-  " that I will have chance to make a big cool website in some day.";
-
-const education =
-  "I'm currently studying for a bachelor's degree at Kasetsart University. " +
-  "My major's computer engineering.";
-
-const story =
-  "Hello, My name's Wachirawit Wacharak. I'm 20 years old. I live with family" +
-  " in outskirt of bankok in Thailand";
+const Contents = [];
+for (let i of profile) {
+  Contents.push(
+    <Content
+      src={"/static/profile/" + i.topic + ".png"}
+      name={i.topic}
+      text={i.content}
+    />
+  );
+}
 
 export default () => (
   <Container style={{ backgroundColor: "#3498db" }}>
-    <PreDetail>
-      <Content
-        src="/static/profile/education.png"
-        name="Education"
-        text={education}
-      />
-      <Content src="/static/profile/story.png" name="Story" text={story} />
-      <Content
-        src="/static/profile/passion.png"
-        name="Passion"
-        text={passion}
-      />
-    </PreDetail>
+    <PreDetail>{Contents}</PreDetail>
   </Container>
 );
