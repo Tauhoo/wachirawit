@@ -298,6 +298,7 @@ var NameContainer = __WEBPACK_IMPORTED_MODULE_2_styled_components__["b" /* defau
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__container__ = __webpack_require__("./components/content/container.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_styled_components__ = __webpack_require__("./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_profile__ = __webpack_require__("./config/profile.js");
 var _jsxFileName = "/home/tauhoo/Documents/wachirawit/components/content/profile.js";
 
 var _templateObject = /*#__PURE__*/ _taggedTemplateLiteral(["\n  height: 100vh;\n  width: calc(100% / 3);\n  display: inline-block;\n  @media (max-width: 970px) {\n    height: calc(100% / 6);\n    width: 100%;\n    display: block;\n    margin-top: 20px;\n  }\n"]),
@@ -313,6 +314,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
+
 var TopicContainer = __WEBPACK_IMPORTED_MODULE_2_styled_components__["b" /* default */].div(_templateObject);
 var Icon = __WEBPACK_IMPORTED_MODULE_2_styled_components__["b" /* default */].img(_templateObject2);
 var Topic = __WEBPACK_IMPORTED_MODULE_2_styled_components__["b" /* default */].span(_templateObject3);
@@ -324,35 +326,65 @@ var Content = function Content(props) {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(TopicContainer, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85
+      lineNumber: 86
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Icon, {
     src: props.src,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86
+      lineNumber: 87
     }
   }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Detail, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87
+      lineNumber: 88
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Topic, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88
+      lineNumber: 89
     }
   }, props.name), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Text, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 90
     }
   }, props.text)));
 };
 
-var passion = "I love to make the beautiful website and hope" + " that I will have chance to make a big cool website in some day.";
-var education = "I'm currently studying for a bachelor's degree at Kasetsart University. " + "My major's computer engineering.";
-var story = "Hello, My name's Wachirawit Wacharak. I'm 20 years old. I live with family" + " in outskirt of bankok in Thailand";
+var Contents = [];
+var _iteratorNormalCompletion = true;
+var _didIteratorError = false;
+var _iteratorError = undefined;
+
+try {
+  for (var _iterator = __WEBPACK_IMPORTED_MODULE_3__config_profile__["a" /* default */][Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+    var _i = _step.value;
+    Contents.push(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Content, {
+      src: "/static/profile/" + _i.topic + ".png",
+      name: _i.topic,
+      text: _i.content,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 97
+      }
+    }));
+  }
+} catch (err) {
+  _didIteratorError = true;
+  _iteratorError = err;
+} finally {
+  try {
+    if (!_iteratorNormalCompletion && _iterator.return != null) {
+      _iterator.return();
+    }
+  } finally {
+    if (_didIteratorError) {
+      throw _iteratorError;
+    }
+  }
+}
+
 /* harmony default export */ __webpack_exports__["a"] = (function () {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__container__["a" /* default */], {
     style: {
@@ -360,38 +392,14 @@ var story = "Hello, My name's Wachirawit Wacharak. I'm 20 years old. I live with
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107
+      lineNumber: 106
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(PreDetail, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 108
+      lineNumber: 107
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Content, {
-    src: "/static/profile/education.png",
-    name: "Education",
-    text: education,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 109
-    }
-  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Content, {
-    src: "/static/profile/story.png",
-    name: "Story",
-    text: story,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 114
-    }
-  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Content, {
-    src: "/static/profile/passion.png",
-    name: "Passion",
-    text: passion,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 115
-    }
-  })));
+  }, Contents));
 });
 
 /***/ }),
@@ -965,6 +973,23 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 /* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_2_react_redux__["b" /* connect */])(function (state) {
   return {};
 }, mapDispatchToProps)(TopBar));
+
+/***/ }),
+
+/***/ "./config/profile.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ __webpack_exports__["a"] = ([{
+  topic: "Education",
+  content: "I'm currently studying for a bachelor's degree at Kasetsart University. My major's computer engineering."
+}, {
+  topic: "Story",
+  content: "Hello, My name's Wachirawit Wacharak. I'm 20 years old. I live with family in outskirt of bankok in Thailand"
+}, {
+  topic: "Passion",
+  content: "I love to make the beautiful website and hope that I will have chance to make a big cool website in some day."
+}]);
 
 /***/ }),
 
